@@ -3,7 +3,7 @@
 (function () {
     'use strict';
 
-    const syncUrl = 'https://dl.dropboxusercontent.com/scl/fi/1iqq9u75lsjta1h8q3o8f/plugins_list.js?rlkey=jhttw50k2zxx76nygh3ua16ac&st=n99lsokd';
+    const syncUrl = 'https://addonslmp.github.io/sources/plugins_mp.js';
 
     const STORAGE_KEY = 'multi_plugins_list';
     const ENABLED_KEY = 'multi_enabled_plugins';
@@ -553,3 +553,4 @@
     console.log('Мультиплагин v4');
 
 })();
+
