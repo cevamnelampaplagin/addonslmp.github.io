@@ -66,7 +66,7 @@ pluginsList= [
     category: 'Онлайн'
   },
   {
-    name: '🇺🇦Free Bandera Online v2.0.0',
+    name: '🇺🇦Free Bandera Online',
     url: 'https://lampame.github.io/main/bo.js',
     description: 'Спільнота t.me/mmssixxx',
     category: 'Онлайн'
