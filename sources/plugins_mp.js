@@ -62,6 +62,12 @@ const remotePlugins = [
     category: 'Категории'
   },
   {
+    name: '🇺🇦Hikka Anime',
+    url: 'https://lampame.github.io/main/hikka.js',
+    description: 'Hikka Anime — плагін для Lampa, який додає каталог аніме з hikka.io з повноцінним пошуком, фільтрами та сортуванням.',
+    category: 'Категории'
+  },
+  {
     name: 'Logo Title',
     url: 'https://mastermagic98.github.io/l_plugins/logo_title.js',
     description: 'Лого фильма вместо названий.',
@@ -104,6 +110,12 @@ const remotePlugins = [
     category: 'Торрент'
   },
   {
+    name: 'Tracks Probe от LME',
+    url: 'https://lampame.github.io/main/tracks.js',
+    description: 'Tracks Probe — плагин для Lampa, который добавляет распознавание аудиодорожек и субтитров в видео (особенно в торрент-файлах) и делает выбор треков в плеере намного удобнее.',
+    category: 'Торрент'
+  },
+  {
     name: 'Online_Mod',
     url: 'https://nb557.github.io/plugins/online_mod.js',
     description: 'Онлайн',
@@ -140,6 +152,7 @@ const remotePlugins = [
     category: 'IPTV'
   }
 ];
+
 
 
 
