@@ -38,6 +38,12 @@ const remotePlugins = [
     category: 'Разное'
   },
   {
+    name: 'Комментарии от Резки',
+    url: 'https://bdvburik.github.io/rezkacomment.js',
+    description: 'Комментарии от Резки',
+    category: 'Разное'
+  },
+  {
     name: 'Новые категории и подборки фильмов',
     url: 'https://lampaplugins.github.io/store/p.js',
     description: 'Новые категории',
@@ -158,6 +164,7 @@ const remotePlugins = [
     category: 'IPTV'
   }
 ];
+
 
 
 
