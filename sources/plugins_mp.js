@@ -69,7 +69,7 @@ const remotePlugins = [
   },
   {
     name: 'Logo Title',
-    url: 'https://mastermagic98.github.io/l_plugins/logo_title.js',
+    url: 'https://lampaplugins.github.io/store/logo.js',
     description: 'Лого фильма вместо названий.',
     category: 'Интерфейс'
   },
@@ -158,6 +158,7 @@ const remotePlugins = [
     category: 'IPTV'
   }
 ];
+
 
 
 
