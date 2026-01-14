@@ -8,6 +8,12 @@ const remotePlugins = [
     category: 'Разное'
   },
   {
+    name: 'TraktTV',
+    url: 'https://lampame.github.io/main/trakttv.js',
+    description: 'Плагин TraktTV интегрирует ваш аккаунт Trakt.tv в приложение Lampa и добавляет удобные разделы для управления списками, прогрессом просмотра и календарём сериалов.',
+    category: 'Разное'
+  },
+  {
     name: 'Series Skip Intro',
     url: 'https://honeyxcat.github.io/series-skip/series-skip.js',
     description: 'Автоматический пропуск интро и титров в сериалах. Работает только во ВСТРОЕННОМ ПЛЕЕРЕ.',
@@ -152,6 +158,7 @@ const remotePlugins = [
     category: 'IPTV'
   }
 ];
+
 
 
 
