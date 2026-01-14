@@ -86,6 +86,12 @@ const remotePlugins = [
     category: 'Интерфейс'
   },
   {
+    name: 'Interface Mod Plus',
+    url: 'https://bywolf88.github.io/lampa-plugins/interface_mod_new.js',
+    description: 'Подробная информация в карточке фильма или сериала',
+    category: 'Интерфейс'
+  },
+  {
     name: 'Torrent Manager',
     url: 'https://lampame.github.io/main/torrentmanager.js',
     description: 'Торрент качалка. Управление торрент клиентом с лампы.',
@@ -152,6 +158,7 @@ const remotePlugins = [
     category: 'IPTV'
   }
 ];
+
 
 
 
