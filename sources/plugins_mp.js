@@ -1,4 +1,4 @@
-const updateDate = '13.01.2026';
+const updateDate = '14.01.2026';
 
 const remotePlugins = [
   {
@@ -158,6 +158,7 @@ const remotePlugins = [
     category: 'IPTV'
   }
 ];
+
 
 
 
