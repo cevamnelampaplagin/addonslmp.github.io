@@ -1,175 +1,99 @@
 const updateDate = '14.01.2026';
 
 const remotePlugins = [
-  {
-    name: 'MyShows',
-    url: 'https://igorek1986.github.io/lampa-plugins/myshows.js',
-    description: 'Плагин для синхронизации сервиса MyShows с Lampa.',
-    category: 'Разное'
-  },
-  {
-    name: 'TraktTV',
-    url: 'https://lampame.github.io/main/trakttv.js',
-    description: 'Плагин TraktTV интегрирует ваш аккаунт Trakt.tv в приложение Lampa и добавляет удобные разделы для управления списками, прогрессом просмотра и календарём сериалов.',
-    category: 'Разное'
-  },
-  {
-    name: 'Series Skip Intro',
-    url: 'https://honeyxcat.github.io/series-skip/series-skip.js',
-    description: 'Автоматический пропуск интро и титров в сериалах. Работает только во ВСТРОЕННОМ ПЛЕЕРЕ.',
-    category: 'Разное'
-  },
-  {
-    name: 'Anime Skip',
-    url: 'https://honeyxcat.github.io/lampa-anime-skip/anime-skip-min.js',
-    description: 'Плагин добавляет отметки для пропуска опенингов и эндингов в аниме, используя базу Anime-Skip. Работает только во ВСТРОЕННОМ ПЛЕЕРЕ.',
-    category: 'Разное'
-  },
-  {
-    name: 'Online lampac grabber',
-    url: 'https://honeyxcat.github.io/lampa-link-online/oooo.js',
-    description: 'Плагин ворует онлайн из открытых Lampac.',
-    category: 'Разное'
-  },
-  {
-    name: 'Plugin installer',
-    url: 'https://addonslmp.github.io/plugins/pluginsinstaller.js',
-    description: 'Простая установка плагинов из вашего источника.',
-    category: 'Разное'
-  },
-  {
-    name: 'Комментарии от Резки',
-    url: 'https://bdvburik.github.io/rezkacomment.js',
-    description: 'Комментарии от Резки',
-    category: 'Разное'
-  },
-  {
-    name: 'Block Shots',
-    url: 'https://addonslmp.github.io/plugins/block_shots.js',
-    description: 'Убирает Shots',
-    category: 'Разное'
-  },
-  {
-    name: 'Новые категории и подборки фильмов',
-    url: 'https://lampaplugins.github.io/store/p.js',
-    description: 'Новые категории',
-    category: 'Категории'
-  },
-  {
-    name: 'NUM Parser',
-    url: 'https://igorek1986.github.io/lampa-plugins/np.js',
-    description: 'NUM источник.',
-    category: 'Категории'
-  },
-  {
-    name: 'Трейлеры новинок',
-    url: 'https://mastermagic98.github.io/l_plugins/upcoming.js',
-    description: 'Новые трейлеры фильмов/сериалов.',
-    category: 'Категории'
-  },
-  {
-    name: 'LNum категория',
-    url: 'https://levende.github.io/lampa-plugins/lnum.js',
-    description: 'LNum источник.',
-    category: 'Категории'
-  },
-  {
-    name: 'Surs категория',
-    url: 'https://aviamovie.github.io/surs.js',
-    description: 'Плагин создает уникальные подборки фильмов и сериалов на главной странице по жанрам, стримингам, популярности, просмотрам и кассовым сборам.',
-    category: 'Категории'
-  },
-  {
-    name: '🇺🇦Hikka Anime',
-    url: 'https://lampame.github.io/main/hikka.js',
-    description: 'Hikka Anime — плагін для Lampa, який додає каталог аніме з hikka.io з повноцінним пошуком, фільтрами та сортуванням.',
-    category: 'Категории'
-  },
-  {
-    name: 'Logo Title',
-    url: 'https://lampaplugins.github.io/store/logo.js',
-    description: 'Лого фильма вместо названий.',
-    category: 'Интерфейс'
-  },
-  {
-    name: 'Новый интерфейс лампы',
-    url: 'https://honeyxcat.github.io/lampa_interface/int.js',
-    description: 'Стильный интерфейс.',
-    category: 'Интерфейс'
-  },
-  {
-    name: 'Apple theme',
-    url: 'https://darkestclouds.github.io/plugins/applecation/applecation.min.js',
-    description: 'Интерфейс карточек в стиле Apple.',
-    category: 'Интерфейс'
-  },
-  {
-    name: 'Interface Mod Plus',
-    url: 'https://bywolf88.github.io/lampa-plugins/interface_mod_new.js',
-    description: 'Подробная информация в карточке фильма или сериала',
-    category: 'Интерфейс'
-  },
-  {
-    name: 'Torrent Manager',
-    url: 'https://lampame.github.io/main/torrentmanager.js',
-    description: 'Торрент качалка. Управление торрент клиентом с лампы.',
-    category: 'Торрент'
-  },
-  {
-    name: 'PubTorr',
-    url: 'https://lampame.github.io/main/pubtorr.js',
-    description: 'Публичные парсеры для поиска торрентов.',
-    category: 'Торрент'
-  },
-  {
-    name: 'Etor',
-    url: 'http://cub.red/plugin/etor',
-    description: 'Плагин для появления пунктов Парсер TorrServer в меню настроек для лампы из магазина. Актуально для телевизоров Samsung.',
-    category: 'Торрент'
-  },
-  {
-    name: 'Tracks',
-    url: 'http://cub.red/plugin/tracks',
-    description: 'Плагин для корректного отображения списка озвучек в торрентах.',
-    category: 'Торрент'
-  },
-  {
-    name: 'Online_Mod',
-    url: 'https://nb557.github.io/plugins/online_mod.js',
-    description: 'Онлайн',
-    category: 'Онлайн'
-  },
-  {
-    name: 'BWA Online',
-    url: 'https://bwa.to/rc',
-    description: 'Стабильный онлайн',
-    category: 'Онлайн'
-  },
-  {
-    name: '🇺🇦Online (безкоштовно)',
-    url: 'http://lampaua.mooo.com/online.js',
-    description: 'Онлайн українською мовою',
-    category: 'Онлайн'
-  },
-  {
-    name: '🇺🇦Free Bandera Online',
-    url: 'https://lampame.github.io/main/bo.js',
-    description: 'Спільнота t.me/mmssixxx',
-    category: 'Онлайн'
-  },
-  {
-    name: 'IPTV',
-    url: 'https://plugin.rootu.top/tv.js',
-    description: 'Плагин для просмотра своих плейлистов в Lampa.',
-    category: 'IPTV'
-  },
-  {
-    name: '🇺🇦TryzubTV',
-    url: 'https://lampame.github.io/main/ttv.js',
-    description: 'TryzubTV — новий плагін для Лампи, який додає українські ТВ‑канали у зручному каталозі. Спільнота t.me/mmssixxx',
-    category: 'IPTV'
-  }
+    {
+        url: 'https://raw.githubusercontent.com/addonslmp/addonslmp.github.io/main/plugins/no_shots.js',
+        name: {
+            ru: 'Блокировка Shots',
+            uk: 'Блокування Shots',
+            en: 'Shots Blocker'
+        },
+        description: {
+            ru: 'Полностью скрывает кнопку и сервис Shots из интерфейса Lampa',
+            uk: 'Повністю приховує кнопку та сервіс Shots з інтерфейсу Lampa',
+            en: 'Completely hides the Shots button and service from Lampa interface'
+        },
+        category: {
+            ru: 'Системные',
+            uk: 'Системні',
+            en: 'System'
+        }
+    },
+    {
+        url: 'https://raw.githubusercontent.com/addonslmp/addonslmp.github.io/main/plugins/no_ads.js',
+        name: {
+            ru: 'Блокировка рекламы',
+            uk: 'Блокування реклами',
+            en: 'Ad Blocker'
+        },
+        description: {
+            ru: 'Отключает всю встроенную рекламу в Lampa (баннеры, всплывающие окна)',
+            uk: 'Вимикає всю вбудовану рекламу в Lampa (банери, спливаючі вікна)',
+            en: 'Disables all built-in ads in Lampa (banners, pop-ups)'
+        },
+        category: {
+            ru: 'Системные',
+            uk: 'Системні',
+            en: 'System'
+        }
+    },
+    {
+        url: 'https://raw.githubusercontent.com/addonslmp/addonslmp.github.io/main/plugins/online.js',
+        name: {
+            ru: 'Онлайн-кинотеатры',
+            uk: 'Онлайн-кінотеатри',
+            en: 'Online Cinemas'
+        },
+        description: {
+            ru: 'Добавляет доступ к популярным онлайн-кинотеатрам и сериалам',
+            uk: 'Додає доступ до популярних онлайн-кінотеатрів та серіалів',
+            en: 'Adds access to popular online cinemas and series'
+        },
+        category: {
+            ru: 'Онлайн',
+            uk: 'Онлайн',
+            en: 'Online'
+        }
+    },
+    {
+        url: 'https://raw.githubusercontent.com/addonslmp/addonslmp.github.io/main/plugins/torrents.js',
+        name: {
+            ru: 'Торрент-клиент',
+            uk: 'Торент-клієнт',
+            en: 'Torrent Client'
+        },
+        description: {
+            ru: 'Встроенный торрент-клиент с поиском и загрузкой',
+            uk: 'Вбудований торент-клієнт з пошуком та завантаженням',
+            en: 'Built-in torrent client with search and download'
+        },
+        category: {
+            ru: 'Торренты',
+            uk: 'Торенти',
+            en: 'Torrents'
+        }
+    },
+    {
+        url: 'https://raw.githubusercontent.com/addonslmp/addonslmp.github.io/main/plugins/18plus.js',
+        name: {
+            ru: '18+ контент',
+            uk: '18+ контент',
+            en: '18+ Content'
+        },
+        description: {
+            ru: 'Доступ к контенту для взрослых (осторожно!)',
+            uk: 'Доступ до контенту для дорослих (обережно!)',
+            en: 'Access to adult content (use with caution!)'
+        },
+        category: {
+            ru: '18+',
+            uk: '18+',
+            en: '18+'
+        }
+    }
+    // ... (добавляй сюда свои плагины в таком же формате)
 ];
+
 
 
 
