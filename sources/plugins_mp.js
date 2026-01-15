@@ -22,36 +22,6 @@ const remotePlugins = [
     category: { ru: 'Разное', uk: 'Різне', en: 'Misc' }
   },
   {
-    name: { ru: 'Series Skip Intro', uk: 'Series Skip Intro', en: 'Series Skip Intro' },
-    url: 'https://honeyxcat.github.io/series-skip/series-skip.js',
-    description: {
-      ru: 'Автоматический пропуск интро и титров в сериалах. Работает только во встроенном плеере.',
-      uk: 'Автоматичний пропуск інтро та титрів у серіалах. Працює лише у вбудованому плеєрі.',
-      en: 'Automatically skips intros and credits in TV series. Works only in the built-in player.'
-    },
-    category: { ru: 'Разное', uk: 'Різне', en: 'Misc' }
-  },
-  {
-    name: { ru: 'Anime Skip', uk: 'Anime Skip', en: 'Anime Skip' },
-    url: 'https://honeyxcat.github.io/lampa-anime-skip/anime-skip-min.js',
-    description: {
-      ru: 'Добавляет метки для пропуска опенингов и эндингов в аниме (Anime-Skip). Только встроенный плеер.',
-      uk: 'Додає мітки для пропуску опенінгів та ендингів в аніме (Anime-Skip). Лише вбудований плеєр.',
-      en: 'Adds skip markers for anime openings and endings using Anime-Skip database.'
-    },
-    category: { ru: 'Разное', uk: 'Різне', en: 'Misc' }
-  },
-  {
-    name: { ru: 'Online lampac grabber', uk: 'Online lampac grabber', en: 'Online lampac grabber' },
-    url: 'https://honeyxcat.github.io/lampa-link-online/oooo.js',
-    description: {
-      ru: 'Получает онлайн-потоки из открытых Lampac.',
-      uk: 'Отримує онлайн-потоки з відкритих Lampac.',
-      en: 'Grabs online streams from open Lampac sources.'
-    },
-    category: { ru: 'Разное', uk: 'Різне', en: 'Misc' }
-  },
-  {
     name: { ru: 'Установщик плагинов', uk: 'Встановлювач плагінів', en: 'Plugin Installer' },
     url: 'https://addonslmp.github.io/plugins/pluginsinstaller.js',
     description: {
@@ -82,7 +52,7 @@ const remotePlugins = [
     category: { ru: 'Разное', uk: 'Різне', en: 'Misc' }
   },
 
-  /* ───── КАТЕГОРИИ ───── */
+  //КАТЕГОРИИ 
 
   {
     name: {
@@ -107,7 +77,27 @@ const remotePlugins = [
       en: 'NUM source.'
     },
     category: { ru: 'Категории', uk: 'Категорії', en: 'Categories' }
+ },
+ {
+    name: { ru: 'LNUM категория', uk: 'LNUM категорія', en: 'LNUM Parser' },
+    url: 'https://levende.github.io/lampa-plugins/lnum.js',
+    description: {
+      ru: 'Источник Lnum.',
+      uk: 'Джерело Lnum.',
+      en: 'LNum source.'
+    },
+    category: { ru: 'Категории', uk: 'Категорії', en: 'Categories' }
   },
+  {
+    name: { ru: 'Surs категория', uk: 'Surs категорія', en: 'Surs category' },
+    url: 'https://aviamovie.github.io/surs.js'',
+    description: {
+      ru: 'Плагин создает уникальные подборки фильмов и сериалов на главной странице по жанрам, стримингам, популярности, просмотрам и кассовым сборам.',
+      uk: 'Плагін створює унікальні добірки фільмів і серіалів на головній сторінці за жанрами, стрімінгами, популярністю, переглядами та касовими зборами.',
+      en: 'The plugin creates unique selections of movies and TV series on the main page by genre, streaming service, popularity, views, and box office earnings.'
+    },
+    category: { ru: 'Категории', uk: 'Категорії', en: 'Categories' }
+  },  
   {
     name: { ru: 'Трейлеры новинок', uk: 'Трейлери новинок', en: 'Upcoming trailers' },
     url: 'https://mastermagic98.github.io/l_plugins/upcoming.js',
@@ -118,8 +108,51 @@ const remotePlugins = [
     },
     category: { ru: 'Категории', uk: 'Категорії', en: 'Categories' }
   },
+  {
+    name: { ru: '🇺🇦Hikka Anime', uk: '🇺🇦Hikka Anime', en: '🇺🇦Hikka Anime' },
+    url: 'https://lampame.github.io/main/hikka.js',
+    description: {
+      ru: 'Hikka Anime — плагин для Lampa, который добавляет каталог аниме с hikka.io с полноценным поиском, фильтрами и сортировкой.',
+      uk: 'Hikka Anime — плагін для Lampa, який додає каталог аніме з hikka.io з повноцінним пошуком, фільтрами та сортуванням.',
+      en: 'Hikka Anime is a plugin for Lampa that adds an anime catalog from hikka.io with full search, filters, and sorting.'
+    },
+    category: { ru: 'Категории', uk: 'Категорії', en: 'Categories' }
+  },
 
-  /* ───── ОНЛАЙН ───── */
+  //ИНТЕРФЕЙС
+
+  {
+    name: { ru: 'Logo Title', uk: 'Logo Title', en: 'Logo Title' },
+    url: 'https://lampaplugins.github.io/store/logo.js',
+    description: {
+      ru: 'Лого фильма вместо названий.',
+      uk: 'Логотип фільму замість назви.',
+      en: 'Movie logos instead of titles.'
+    },
+    category: { ru: 'Интерфейс', uk: 'Інтерфейс', en: 'Interface' }
+  },
+  {
+    name: { ru: 'Apple theme', uk: 'Apple theme', en: 'Apple theme' },
+    url: 'https://darkestclouds.github.io/plugins/applecation/applecation.min.js',
+    description: {
+      ru: 'Интерфейс карточек в стиле Apple.',
+      uk: 'Інтерфейс карток у стилі Apple.',
+      en: 'Apple-style card interface.'
+    },
+    category: { ru: 'Интерфейс', uk: 'Інтерфейс', en: 'Interface' }
+  },  
+  {
+    name: { ru: 'Interface Mod Plus', uk: 'Interface Mod Plus', en: 'Interface Mod Plus' },
+    url: 'https://bywolf88.github.io/lampa-plugins/interface_mod_new.js',
+    description: {
+      ru: 'Подробная информация в карточке фильма или сериала.',
+      uk: 'Детальна інформація в картці фільму або серіалу.',
+      en: 'Detailed information in the movie or series card.'
+    },
+    category: { ru: 'Интерфейс', uk: 'Інтерфейс', en: 'Interface' }
+  },       
+   
+  //ОНЛАЙН
 
   {
     name: { ru: 'Online_Mod', uk: 'Online_Mod', en: 'Online_Mod' },
@@ -145,3 +178,4 @@ const remotePlugins = [
     category: { ru: 'IPTV', uk: 'IPTV', en: 'IPTV' }
   }
 ];
+
