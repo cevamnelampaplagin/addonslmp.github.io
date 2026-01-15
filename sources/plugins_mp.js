@@ -112,7 +112,7 @@ const remotePlugins = [
     name: { ru: '🇺🇦Hikka Anime', uk: '🇺🇦Hikka Anime', en: '🇺🇦Hikka Anime' },
     url: 'https://lampame.github.io/main/hikka.js',
     description: {
-      ru: 'Hikka Anime — плагин для Lampa, который добавляет каталог аниме с hikka.io с полноценным поиском, фильтрами и сортировкой.',
+      ru: 'Hikka Anime — плагін для Lampa, який додає каталог аніме з hikka.io з повноцінним пошуком, фільтрами та сортуванням.',
       uk: 'Hikka Anime — плагін для Lampa, який додає каталог аніме з hikka.io з повноцінним пошуком, фільтрами та сортуванням.',
       en: 'Hikka Anime is a plugin for Lampa that adds an anime catalog from hikka.io with full search, filters, and sorting.'
     },
@@ -150,8 +150,51 @@ const remotePlugins = [
       en: 'Detailed information in the movie or series card.'
     },
     category: { ru: 'Интерфейс', uk: 'Інтерфейс', en: 'Interface' }
-  },       
-   
+  }, 
+
+  //TORRENT
+
+  {
+    name: { ru: 'Torrent Manager', uk: 'Torrent Manager', en: 'Torrent Manager' },
+    url: 'https://lampame.github.io/main/torrentmanager.js',
+    description: {
+      ru: 'Торрент качалка. Управление торрент клиентом с лампы.',
+      uk: 'Торрент-качалка. Управління торрент-клієнтом з лампи.',
+      en: 'Torrent downloader. Managing a torrent client from a lampa.'
+    },
+    category: { ru: 'Торрент', uk: 'Торрент', en: 'Torrent' }
+  },   
+  {
+    name: { ru: 'PubTorr', uk: 'PubTorr', en: 'PubTorr' },
+    url: 'https://lampame.github.io/main/pubtorr.js',
+    description: {
+      ru: 'Публичные парсеры для поиска торрентов.',
+      uk: 'Публічні парсери для пошуку торрентів.',
+      en: 'Public parsers for searching torrents.'
+    },
+    category: { ru: 'Торрент', uk: 'Торрент', en: 'Torrent' }
+  },   
+  {
+    name: { ru: 'Etor', uk: 'Etor', en: 'Etor' },
+    url: 'http://cub.red/plugin/etor',
+    description: {
+      ru: 'Плагин для появления пунктов Парсер TorrServer в меню настроек для лампы из магазина. Актуально для телевизоров Samsung.',
+      uk: 'Плагін для появи пунктів Парсер TorrServer в меню налаштувань для лампи з магазину. Актуально для телевізорів Samsung.',
+      en: 'Plugin for displaying TorrServer parser items in the settings menu for lamps from the store. Applicable for Samsung TVs.'
+    },
+    category: { ru: 'Торрент', uk: 'Торрент', en: 'Torrent' }
+  },  
+  {
+    name: { ru: 'Tracks', uk: 'Tracks', en: 'Tracks' },
+    url: 'http://cub.red/plugin/tracks',
+    description: {
+      ru: 'Плагин для корректного отображения списка озвучек в торрентах.',
+      uk: 'Плагін для коректного відображення списку озвучок в торрентах.',
+      en: 'Plugin for correct display of voice acting lists in torrents.'
+    },
+    category: { ru: 'Торрент', uk: 'Торрент', en: 'Torrent' }
+  },   
+  
   //ОНЛАЙН
 
   {
@@ -164,8 +207,38 @@ const remotePlugins = [
     },
     category: { ru: 'Онлайн', uk: 'Онлайн', en: 'Online' }
   },
+  {
+    name: { ru: 'BWA Online', uk: 'BWA Online', en: 'BWA Online' },
+    url: 'https://bwa.to/rc',
+    description: {
+      ru: 'BWA Online',
+      uk: 'BWA Online',
+      en: 'BWA Online'
+    },
+    category: { ru: 'Онлайн', uk: 'Онлайн', en: 'Online' }
+  },  
+  {
+    name: { ru: '🇺🇦Online (безкоштовно)', uk: '🇺🇦Online (безкоштовно)', en: '🇺🇦Online (безкоштовно)' },
+    url: 'http://lampaua.mooo.com/online.js',
+    description: {
+      ru: 'Онлайн українською мовою',
+      uk: 'Онлайн українською мовою',
+      en: 'Online in Ukrainian language'
+    },
+    category: { ru: 'Онлайн', uk: 'Онлайн', en: 'Online' }
+  },    
+  {
+    name: { ru: '🇺🇦Free Bandera Online', uk: '🇺🇦Free Bandera Online', en: '🇺🇦Free Bandera Online' },
+    url: 'https://lampame.github.io/main/bo.js',
+    description: {
+      ru: 'Спільнота t.me/mmssixxx',
+      uk: 'Спільнота t.me/mmssixxx',
+      en: 'Community t.me/mmssixxx'
+    },
+    category: { ru: 'Онлайн', uk: 'Онлайн', en: 'Online' }
+  },     
 
-  /* ───── IPTV ───── */
+  //IPTV
 
   {
     name: { ru: 'IPTV', uk: 'IPTV', en: 'IPTV' },
@@ -176,6 +249,17 @@ const remotePlugins = [
       en: 'Watch your own IPTV playlists in Lampa.'
     },
     category: { ru: 'IPTV', uk: 'IPTV', en: 'IPTV' }
-  }
+  },
+  {
+    name: { ru: '🇺🇦TryzubTV', uk: '🇺🇦TryzubTV', en: '🇺🇦TryzubTV' },
+    url: 'https://lampame.github.io/main/ttv.js',
+    description: {
+      ru: 'TryzubTV — новий плагін для Лампи, який додає українські ТВ‑канали у зручному каталозі. Спільнота t.me/mmssixxx',
+      uk: 'TryzubTV — новий плагін для Лампи, який додає українські ТВ‑канали у зручному каталозі. Спільнота t.me/mmssixxx',
+      en: 'TryzubTV is a new plugin for Lampa that adds Ukrainian TV channels to a convenient catalog. Community t.me/mmssixxx'
+    },
+    category: { ru: 'IPTV', uk: 'IPTV', en: 'IPTV' }
+  }  
 ];
+
 
