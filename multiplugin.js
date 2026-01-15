@@ -1,7 +1,6 @@
 (function () {
     'use strict';
 
-
     Lampa.Lang.add({
         mp_title: {
             ru: 'Мультиплагин',
@@ -155,57 +154,47 @@
         }
     });
 
+    // ────────────────────────────────────────────────
+    // Хелпер для переводов из plugins_list.js
+    // ────────────────────────────────────────────────
     function tr(value) {
         if (!value) return '';
 
-
         if (typeof value === 'string') return value;
 
-
         const lang = Lampa.Storage.get('language', 'ru');
-
 
         return value[lang] || value.ru || '';
     }
 
-
     const syncUrl = 'https://addonslmp.github.io/sources/plugins_mp.js';
-
 
     const STORAGE_KEY = 'multi_plugins_list';
     const ENABLED_KEY = 'multi_enabled_plugins';
     const INFO_KEY = 'multi_last_update';
 
-
     let pluginList = [];
-
 
     function loadEnabledPlugins() {
         const enabled = new Set(Lampa.Storage.get(ENABLED_KEY, []));
-
 
         const urls = pluginList
             .filter(p => enabled.has(p.url))
             .map(p => p.url);
 
-
         if (urls.length === 0) return;
-
 
         Lampa.Utils.putScriptAsync(urls, () => {}, () => {}, false);
     }
-
 
     function savePluginList(list) {
         Lampa.Storage.set(STORAGE_KEY, list);
         pluginList = list;
     }
 
-
     function getPluginList() {
         return Lampa.Storage.get(STORAGE_KEY, []);
     }
-
 
     function saveUpdateInfo(date, added, removed) {
         const info = {
@@ -216,19 +205,15 @@
         Lampa.Storage.set(INFO_KEY, info, true);
     }
 
-
     function getUpdateInfo() {
         return Lampa.Storage.get(INFO_KEY, { date: '—', added: [], removed: [] });
     }
 
-
     function showInfo() {
         const info = getUpdateInfo();
 
-
         let html = '<div class="about" style="text-align:left">';
         html += `<div><b>${Lampa.Lang.translate('mp_last_update')}</b> ${info.date}</div><br>`;
-
 
         if (info.added.length) {
             html += `<b>${Lampa.Lang.translate('mp_added')}</b><br>`;
@@ -243,7 +228,6 @@
             html += '<br>';
         }
 
-
         if (info.removed.length) {
             html += `<b>${Lampa.Lang.translate('mp_removed')}</b><br>`;
             info.removed.forEach(p => {
@@ -257,17 +241,13 @@
             html += '<br>';
         }
 
-
         if (!info.added.length && !info.removed.length) {
             html += `<div>${Lampa.Lang.translate('mp_no_changes')}</div>`;
         }
 
-
         html += '</div>';
 
-
         const prev = Lampa.Controller.enabled().name;
-
 
         Lampa.Modal.open({
             title: Lampa.Lang.translate('mp_update_info'),
@@ -283,19 +263,15 @@
         });
     }
 
-
     function showCategory(category) {
         const plugins = pluginList.filter(p => tr(p.category || 'Разное') === category);
-
 
         if (plugins.length === 0) {
             Lampa.Noty.show(Lampa.Lang.translate('mp_no_plugins_category').replace('%s', category));
             return;
         }
 
-
         const enabled = new Set(Lampa.Storage.get(ENABLED_KEY, []));
-
 
         const items = plugins.map(p => ({
             title: tr(p.name) || p.url.split('/').pop(),
@@ -305,13 +281,11 @@
             url: p.url
         }));
 
-
         Lampa.Select.show({
             title: category,
             items: items,
             onCheck: function (item) {
                 const enabledSet = new Set(Lampa.Storage.get(ENABLED_KEY, []));
-
 
                 if (item.checked) {
                     enabledSet.add(item.url);
@@ -321,7 +295,6 @@
                     Lampa.Noty.show(Lampa.Lang.translate('mp_plugin_disabled').replace('%s', item.title));
                 }
 
-
                 Lampa.Storage.set(ENABLED_KEY, Array.from(enabledSet));
             },
             onBack: function () {
@@ -330,19 +303,15 @@
         });
     }
 
-
     function showEnabledPlugins() {
         const enabled = new Set(Lampa.Storage.get(ENABLED_KEY, []));
 
-
         const active = pluginList.filter(p => enabled.has(p.url));
-
 
         if (active.length === 0) {
             Lampa.Noty.show(Lampa.Lang.translate('mp_no_plugins'));
             return;
         }
-
 
         const items = active.map(p => ({
             title: tr(p.name) || p.url.split('/').pop(),
@@ -351,7 +320,6 @@
             checked: true,
             url: p.url
         }));
-
 
         Lampa.Select.show({
             title: Lampa.Lang.translate('mp_current_plugins'),
@@ -370,10 +338,8 @@
         });
     }
 
-
     function disableAllPlugins() {
         const prev = Lampa.Controller.enabled().name;
-
 
         Lampa.Modal.open({
             title: Lampa.Lang.translate('mp_disable_all'),
@@ -400,10 +366,8 @@
         });
     }
 
-
     function exportToLampa() {
         const prev = Lampa.Controller.enabled().name;
-
 
         Lampa.Modal.open({
             title: Lampa.Lang.translate('mp_export_to_lampa'),
@@ -422,22 +386,17 @@
                     onSelect: function () {
                         Lampa.Modal.close();
 
-
                         const enabledUrls = Lampa.Storage.get(ENABLED_KEY, []);
                         const installed = Lampa.Plugins.get() || [];
 
-
                         let added = 0;
-
 
                         enabledUrls.forEach(url => {
                             const plugin = pluginList.find(p => p.url === url);
                             if (!plugin) return;
 
-
                             const exists = installed.find(p => p.url === plugin.url);
                             if (exists) return;
-
 
                             Lampa.Plugins.add({
                                 url: plugin.url,
@@ -446,15 +405,12 @@
                                 source: 'multiplugin'
                             });
 
-
                             added++;
                         });
-
 
                         if (added > 0) {
                             Lampa.Plugins.save();
                         }
-
 
                         window.location.reload();
                     }
@@ -463,10 +419,8 @@
         });
     }
 
-
     function confirmAndSync() {
         const prev = Lampa.Controller.enabled().name;
-
 
         Lampa.Modal.open({
             title: Lampa.Lang.translate('mp_sync_plugins'),
@@ -491,10 +445,8 @@
         });
     }
 
-
     function confirmAndLoadOnline() {
         const prev = Lampa.Controller.enabled().name;
-
 
         Lampa.Modal.open({
             title: Lampa.Lang.translate('mp_load_online_only'),
@@ -519,10 +471,8 @@
         });
     }
 
-
     function loadOnlyOnline(callback = () => {}) {
         Lampa.Loading.start();
-
 
         fetch(syncUrl, { cache: 'no-cache' })
             .then(response => response.text())
@@ -532,23 +482,19 @@
                     const remoteObjects = eval('(' + listMatch[1] + ')');
                     const newList = remoteObjects.map(item => ({
                         url: item.url,
-                        name: item.name || item.url.split('/').pop(),
-                        description: item.description || '',
-                        category: item.category || 'Разное'
+                        name: item.name,
+                        description: item.description,
+                        category: item.category
                     }));
-
 
                     savePluginList(newList);
 
-
                     const enabledSet = new Set(Lampa.Storage.get(ENABLED_KEY, []));
                     newList
-                        .filter(p => p.category === 'Онлайн')
+                        .filter(p => tr(p.category) === 'Онлайн' || tr(p.category) === 'Online')
                         .forEach(p => enabledSet.add(p.url));
 
-
                     Lampa.Storage.set(ENABLED_KEY, Array.from(enabledSet));
-
 
                     Lampa.Noty.show(Lampa.Lang.translate('mp_online_enabled'));
                 }
@@ -562,10 +508,8 @@
             });
     }
 
-
     function synchronize(callback = () => {}) {
         Lampa.Loading.start();
-
 
         fetch(syncUrl, { cache: 'no-cache' })
             .then(response => response.text())
@@ -573,33 +517,27 @@
                 const dateMatch = text.match(/const\s+updateDate\s*=\s*['"]([^'"]+)['"]/);
                 const listMatch = text.match(/const\s+remotePlugins\s*=\s*(\[[\s\S]*?\])/);
 
-
                 if (listMatch && listMatch[1]) {
                     const remoteObjects = eval('(' + listMatch[1] + ')');
                     const newList = remoteObjects.map(item => ({
                         url: item.url,
-                        name: item.name || item.url.split('/').pop(),
-                        description: item.description || '',
-                        category: item.category || 'Разное'
+                        name: item.name,
+                        description: item.description,
+                        category: item.category
                     }));
-
 
                     const prevList = getPluginList();
                     const prevUrls = prevList.map(p => p.url);
                     const newUrls = newList.map(p => p.url);
 
-
                     const added = newUrls.filter(x => !prevUrls.includes(x));
                     const removed = prevUrls.filter(x => !newUrls.includes(x));
 
-
                     savePluginList(newList);
-
 
                     const oldEnabled = new Set(Lampa.Storage.get(ENABLED_KEY, []));
                     const validEnabled = prevUrls.filter(u => oldEnabled.has(u) && newUrls.includes(u));
                     Lampa.Storage.set(ENABLED_KEY, validEnabled);
-
 
                     Lampa.Noty.show(Lampa.Lang.translate('mp_sync_complete'));
                 }
@@ -613,7 +551,6 @@
             });
     }
 
-
     function checkUpdatesOnStart() {
         fetch(syncUrl, { cache: 'no-cache' })
             .then(r => r.text())
@@ -621,25 +558,20 @@
                 const dateMatch = text.match(/const\s+updateDate\s*=\s*['"]([^'"]+)['"]/);
                 const listMatch = text.match(/const\s+remotePlugins\s*=\s*(\[[\s\S]*?\])/);
 
-
                 if (!listMatch) return;
 
-
                 const remoteDate = dateMatch ? dateMatch[1] : '—';
-
 
                 const remoteObjects = eval('(' + listMatch[1] + ')');
                 const remoteList = remoteObjects.map(item => ({
                     url: item.url,
-                    name: item.name || item.url.split('/').pop(),
-                    description: item.description || ''
+                    name: item.name,
+                    description: item.description
                 }));
-
 
                 const localList = getPluginList();
                 const localUrls = localList.map(p => p.url);
                 const remoteUrls = remoteList.map(p => p.url);
-
 
                 const added = remoteList
                     .filter(p => !localUrls.includes(p.url))
@@ -649,7 +581,6 @@
                         description: p.description
                     }));
 
-
                 const removed = localList
                     .filter(p => !remoteUrls.includes(p.url))
                     .map(p => ({
@@ -658,7 +589,6 @@
                         description: p.description || ''
                     }));
 
-
                 if (added.length > 0 || removed.length > 0) {
                     saveUpdateInfo(remoteDate, added, removed);
                 }
@@ -666,10 +596,8 @@
             .catch(() => {});
     }
 
-
     function addCategoryButtons() {
         const categories = [...new Set(pluginList.map(p => tr(p.category || 'Разное')))].sort();
-
 
         categories.forEach(cat => {
             Lampa.SettingsApi.addParam({
@@ -681,13 +609,11 @@
         });
     }
 
-
     Lampa.SettingsApi.addComponent({
         component: 'multi_plugin',
         icon: '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="4" width="16" height="16" rx="2" stroke="#fff" stroke-width="2"/><rect x="8" y="8" width="8" height="8" rx="1" stroke="#fff" stroke-width="2"/></svg>',
         name: Lampa.Lang.translate('mp_title')
     });
-
 
     Lampa.SettingsApi.addParam({
         component: 'multi_plugin',
@@ -696,14 +622,12 @@
         onChange: showInfo
     });
 
-
     Lampa.SettingsApi.addParam({
         component: 'multi_plugin',
         param: { type: 'button' },
         field: { name: Lampa.Lang.translate('mp_sync_plugins') },
         onChange: confirmAndSync
     });
-
 
     Lampa.SettingsApi.addParam({
         component: 'multi_plugin',
@@ -712,13 +636,11 @@
         onChange: confirmAndLoadOnline
     });
 
-
     Lampa.SettingsApi.addParam({
         component: 'multi_plugin',
         param: { type: 'title' },
         field: { name: Lampa.Lang.translate('mp_management') }
     });
-
 
     Lampa.SettingsApi.addParam({
         component: 'multi_plugin',
@@ -727,14 +649,12 @@
         onChange: showEnabledPlugins
     });
 
-
     Lampa.SettingsApi.addParam({
         component: 'multi_plugin',
         param: { type: 'button' },
         field: { name: Lampa.Lang.translate('mp_export_to_lampa') },
         onChange: exportToLampa
     });
-
 
     Lampa.SettingsApi.addParam({
         component: 'multi_plugin',
@@ -743,14 +663,12 @@
         onChange: disableAllPlugins
     });
 
-
     Lampa.SettingsApi.addParam({
         component: 'multi_plugin',
         param: { type: 'button' },
         field: { name: Lampa.Lang.translate('mp_reload_lampa') },
         onChange: function () {
             const prev = Lampa.Controller.enabled().name;
-
 
             Lampa.Modal.open({
                 title: Lampa.Lang.translate('mp_reload_lampa'),
@@ -776,21 +694,17 @@
         }
     });
 
-
     Lampa.SettingsApi.addParam({
         component: 'multi_plugin',
         param: { type: 'title' },
         field: { name: Lampa.Lang.translate('mp_category_plugins') }
     });
 
-
     Lampa.Listener.follow('app', function (e) {
         if (e.type === 'ready') {
             pluginList = getPluginList();
 
-
             checkUpdatesOnStart();
-
 
             if (pluginList.length === 0) {
                 synchronize();
@@ -800,7 +714,6 @@
             }
         }
     });
-
 
     console.log('Мультиплагин v4');
 })();
