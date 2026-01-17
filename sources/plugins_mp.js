@@ -16,9 +16,9 @@ const remotePlugins = [
     category: {
       ru: 'Разное',
       uk: 'Різне',
-      en: 'Misc',
+      en: 'Misc'
+    },  
     non_lazy: true
-    }
   },
   {
     name: {
@@ -450,4 +450,5 @@ const remotePlugins = [
     }
   }
 ];
+
 
