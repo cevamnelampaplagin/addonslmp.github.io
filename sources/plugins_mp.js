@@ -109,6 +109,24 @@ const remotePlugins = [
       en: 'Misc'
     }
   },
+ {
+    name: {
+      ru: 'HFix',
+      uk: 'HFix',
+      en: 'HFix'
+    },
+    url: 'https://ipavlin98.github.io/lmp-plugins/huyfix.js',
+    description: {
+      ru: 'То же, что и OnlineServe, но с автоматическим поиском по всем выбранным в настройках балансерам без ручного выбора при запуске.',
+      uk: 'Те саме, що й OnlineServe, але з автоматичним пошуком за всіма обраними в налаштуваннях балансерами без ручного вибору під час запуску.',
+      en: 'Same as OnlineServe, but with automatic search across all load balancers selected in the settings without manual selection at startup.'
+    },
+    category: {
+      ru: 'Разное',
+      uk: 'Різне',
+      en: 'Misc'
+    }
+  }, 
   {
     name: {
       ru: 'Season Fix',
@@ -575,6 +593,7 @@ const remotePlugins = [
     }
   }
 ];
+
 
 
 
