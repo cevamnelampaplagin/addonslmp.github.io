@@ -557,7 +557,6 @@ const remotePlugins = [
       ru: 'Аниме',
       uk: 'Аніме',
       en: 'Anime'
-    }
   },
   {
     name: {
@@ -595,6 +594,7 @@ const remotePlugins = [
    }
   }     
 ];
+
 
 
 
