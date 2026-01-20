@@ -109,7 +109,7 @@ const remotePlugins = [
       en: 'Misc'
     }
   },
- {
+  {
     name: {
       ru: 'HFix',
       uk: 'HFix',
@@ -126,44 +126,8 @@ const remotePlugins = [
       uk: 'Різне',
       en: 'Misc'
     }
-  }, 
-  {
-    name: {
-      ru: 'Season Fix',
-      uk: 'Season Fix',
-      en: 'Season Fix'
-    },
-    url: 'https://ipavlin98.github.io/lmp-plugins/season-fix.js',
-    description: {
-      ru: 'Разбивает бесконечные первые сезоны аниме на нормальные части используя базу данных TVmaze.',
-      uk: 'Розбиває нескінченні перші сезони аніме на нормальні частини, використовуючи базу даних TVmaze.',
-      en: 'Breaks endless first seasons of anime into normal parts using the TVmaze database.'
-    },
-    category: {
-      ru: 'Разное',
-      uk: 'Різне',
-      en: 'Misc'
-    }
   },
   {
-    name: {
-      ru: 'Anime Skip',
-      uk: 'Anime Skip',
-      en: 'Anime Skip'
-    },
-    url: 'https://ipavlin98.github.io/lmp-plugins/anime-skip.js',
-    description: {
-      ru: 'Пропуск опенингов и эндингов в аниме через базу Aniskip.',
-      uk: 'Пропуск опенінгів та ендінгів в аніме через базу Aniskip.',
-      en: 'Skipping openings and endings in anime using the Aniskip database.'
-    },
-    category: {
-      ru: 'Разное',
-      uk: 'Різне',
-      en: 'Misc'
-    }
-  },
-    {
     name: {
       ru: 'Series Skip',
       uk: 'Series Skip',
@@ -267,24 +231,6 @@ const remotePlugins = [
       ru: 'Трейлеры новых фильмов и сериалов',
       uk: 'Трейлери нових фільмів та серіалів',
       en: 'Trailers for new movies and TV shows'
-    },
-    category: {
-      ru: 'Категории',
-      uk: 'Категорії',
-      en: 'Categories'
-    }
-  },
-  {
-    name: {
-      ru: '🇺🇦 Hikka Anime',
-      uk: '🇺🇦 Hikka Anime',
-      en: '🇺🇦 Hikka Anime'
-    },
-    url: 'https://lampame.github.io/main/hikka.js',
-    description: {
-      ru: 'Каталог аниме с hikka.io: поиск, фильтры, сортировка.',
-      uk: 'Каталог аніме з hikka.io: пошук, фільтри, сортування.',
-      en: 'Anime catalog from hikka.io: search, filters, sorting.'
     },
     category: {
       ru: 'Категории',
@@ -591,8 +537,65 @@ const remotePlugins = [
       uk: 'IPTV',
       en: 'IPTV'
     }
+  },
+  // ────────────────────────────────────────────────
+  // ANIME
+  // ────────────────────────────────────────────────  
+  {
+    name: {
+      ru: 'Season Fix',
+      uk: 'Season Fix',
+      en: 'Season Fix'
+    },
+    url: 'https://ipavlin98.github.io/lmp-plugins/season-fix.js',
+    description: {
+      ru: 'Разбивает бесконечные первые сезоны аниме на нормальные части используя базу данных TVmaze.',
+      uk: 'Розбиває нескінченні перші сезони аніме на нормальні частини, використовуючи базу даних TVmaze.',
+      en: 'Breaks endless first seasons of anime into normal parts using the TVmaze database.'
+    },
+    category: {
+      ru: 'Аниме',
+      uk: 'Аніме',
+      en: 'Anime'
+    }
+  },
+  {
+    name: {
+      ru: 'Anime Skip',
+      uk: 'Anime Skip',
+      en: 'Anime Skip'
+    },
+    url: 'https://ipavlin98.github.io/lmp-plugins/anime-skip.js',
+    description: {
+      ru: 'Пропуск опенингов и эндингов в аниме через базу Aniskip.',
+      uk: 'Пропуск опенінгів та ендінгів в аніме через базу Aniskip.',
+      en: 'Skipping openings and endings in anime using the Aniskip database.'
+    },
+    category: {
+      ru: 'Аниме',
+      uk: 'Аніме',
+      en: 'Anime'
+  },
+  {
+    name: {
+      ru: '🇺🇦 Hikka Anime',
+      uk: '🇺🇦 Hikka Anime',
+      en: '🇺🇦 Hikka Anime'
+    },
+    url: 'https://lampame.github.io/main/hikka.js',
+    description: {
+      ru: 'Каталог аниме с hikka.io: поиск, фильтры, сортировка.',
+      uk: 'Каталог аніме з hikka.io: пошук, фільтри, сортування.',
+      en: 'Anime catalog from hikka.io: search, filters, sorting.'
+    },
+    category: {
+      ru: 'Категории',
+      uk: 'Категорії',
+      en: 'Categories'
+    }
   }
 ];
+
 
 
 
