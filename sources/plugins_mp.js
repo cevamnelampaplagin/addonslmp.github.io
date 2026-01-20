@@ -593,7 +593,9 @@ const remotePlugins = [
       uk: 'Аніме',
       en: 'Anime'
    }
+  }     
 ];
+
 
 
 
