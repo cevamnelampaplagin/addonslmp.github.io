@@ -493,16 +493,16 @@
         "uk": "🇺🇦 BazarNetUA (безкоштовно)",
         "en": "🇺🇦 BazarNetUA (free)"
       },
-      "url": "https://lampaua.mooo.com/online/js/tmaih4wt",
+      "url": "https://lampaua.mooo.com/online/js/",
       "description": {
         "ru": "Онлайн-контент українською мовою",
         "uk": "Онлайн-контент українською мовою",
         "en": "Online content in Ukrainian"
       },
       "category": {
-        "ru": "Онлайн",
-        "uk": "Онлайн",
-        "en": "Online"
+        "ru": "BazarNetUA",
+        "uk": "BazarNetUA",
+        "en": "BazarNetUA"
       }
     },
     {
@@ -615,6 +615,7 @@
     }
   ]
 }
+
 
 
 
