@@ -144,43 +144,7 @@
         "uk": "Різне",
         "en": "Misc"
       }
-    },
-    {
-      "name": {
-        "ru": "Quality+Mod",
-        "uk": "Quality+Mod",
-        "en": "Quality+Mod"
-      },
-      "url": "https://ko31k.github.io/LMP/plugins/Quality+Mod.js",
-      "description": {
-        "ru": "Показывает метку качества на карточке фильма.",
-        "uk": "Показує позначку якості на картці фільму.",
-        "en": "Shows the quality mark on the movie card."
-      },
-      "category": {
-        "ru": "Разное",
-        "uk": "Різне",
-        "en": "Misc"
-      }
-    },
-    {
-      "name": {
-        "ru": "Рейтинг фильмов и сериалов",
-        "uk": "Рейтинг фільмів і серіалів",
-        "en": "Rating of movies and TV series "
-      },
-      "url": "https://ko31k.github.io/LMP/plugins/rtg.js",
-      "description": {
-        "ru": "Оценки к фильмам/сериалам с разных источников IMDB, TMDB, Metacritic.",
-        "uk": "Оцінки до фільмів/серіалів з різних джерел IMDB, TMDB, Metacritic.",
-        "en": "Ratings for movies/TV series from various sources: IMDB, TMDB, Metacritic."
-      },
-      "category": {
-        "ru": "Разное",
-        "uk": "Різне",
-        "en": "Misc"
-      }
-    },    
+    },   
     {
       "name": {
         "ru": "Новые категории и подборки фильмов",
@@ -230,9 +194,9 @@
         "en": "The main goal is to provide you with unique and relevant themed collections that you can enable or disable at your discretion. The plugin creates a separate content source: ‘TMDB_MOD’."
       },
       "category": {
-        "ru": "Разное",
-        "uk": "Різне",
-        "en": "Misc"
+        "ru": "Категории",
+        "uk": "Категорії",
+        "en": "Categories"
       }
     },     
     {
@@ -396,7 +360,43 @@
         "uk": "Інтерфейс",
         "en": "Interface"
       }
-    },    
+    },
+    {
+      "name": {
+        "ru": "Quality+Mod",
+        "uk": "Quality+Mod",
+        "en": "Quality+Mod"
+      },
+      "url": "https://ko31k.github.io/LMP/plugins/Quality+Mod.js",
+      "description": {
+        "ru": "Показывает метку качества на карточке фильма.",
+        "uk": "Показує позначку якості на картці фільму.",
+        "en": "Shows the quality mark on the movie card."
+      },
+      "category": {
+        "ru": "Интерфейс",
+        "uk": "Інтерфейс",
+        "en": "Interface"
+      }
+    }, 
+    {
+      "name": {
+        "ru": "Рейтинг фильмов и сериалов",
+        "uk": "Рейтинг фільмів і серіалів",
+        "en": "Rating of movies and TV series "
+      },
+      "url": "https://ko31k.github.io/LMP/plugins/rtg.js",
+      "description": {
+        "ru": "Оценки к фильмам/сериалам с разных источников IMDB, TMDB, Metacritic.",
+        "uk": "Оцінки до фільмів/серіалів з різних джерел IMDB, TMDB, Metacritic.",
+        "en": "Ratings for movies/TV series from various sources: IMDB, TMDB, Metacritic."
+      },
+      "category": {
+        "ru": "Интерфейс",
+        "uk": "Інтерфейс",
+        "en": "Interface"
+      }
+    },     
     {
       "name": {
         "ru": "Torrent Manager",
@@ -651,6 +651,7 @@
     }
   ]
 }
+
 
 
 
