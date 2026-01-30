@@ -1,5 +1,5 @@
 {
-  "updateDate": "28.01.2026",
+  "updateDate": "30.01.2026",
   "plugins": [
     {
       "name": {
@@ -136,7 +136,7 @@
       "url": "https://ipavlin98.github.io/lmp-series-skip-db/series-skip.js",
       "description": {
         "ru": "Пропуск интро и аутро для сериалов. Работает для большинства популярных тайтлов.",
-        "uk": "Пропуск інтро та аутро для серіалів. Працює для більшості популярних титулів.",
+        "uk": "Пропуск інтро та аутро для серіалів. Працює для більшості популярних серіалів.",
         "en": "Skip intro and outro for TV series. Works for most popular titles."
       },
       "category": {
@@ -145,6 +145,24 @@
         "en": "Misc"
       }
     },   
+    {
+      "name": {
+        "ru": "Buttons Editor",
+        "uk": "Buttons Editor",
+        "en": "Buttons Editor"
+      },
+      "url": "https://mylampa1.github.io/buttons.js",
+      "description": {
+        "ru": "Редактор для кнопок меню в карточке.",
+        "uk": "Редактор для кнопок меню в картці.",
+        "en": "Editor for menu buttons in the card."
+      },
+      "category": {
+        "ru": "Разное",
+        "uk": "Різне",
+        "en": "Misc"
+      }
+    },     
     {
       "name": {
         "ru": "Новые категории и подборки фильмов",
@@ -651,6 +669,7 @@
     }
   ]
 }
+
 
 
 
