@@ -1,5 +1,5 @@
 {
-  "updateDate": "31.01.2026",
+  "updateDate": "01.02.2026",
   "plugins": [
     {
       "name": {
@@ -561,6 +561,24 @@
     },
     {
       "name": {
+        "ru": "TS Preload",
+        "uk": "TS Preload",
+        "en": "TS Preload"
+      },
+      "url": "https://plugin.rootu.top/ts-preload.js",
+      "description": {
+        "ru": "Плагин визуализации предзагрузки торрентов для встроенного клиента TorrServer'а.",
+        "uk": "Плагін візуалізації попереднього завантаження торрентів для вбудованого клієнта TorrServer'а.",
+        "en": "Torrent preload visualization plugin for TorrServer's built-in client."
+      },
+      "category": {
+        "ru": "Торрент",
+        "uk": "Торрент",
+        "en": "Torrent"
+      }
+    },    
+    {
+      "name": {
         "ru": "Online_Mod",
         "uk": "Online_Mod",
         "en": "Online_Mod"
@@ -723,6 +741,7 @@
     }
   ]
 }
+
 
 
 
