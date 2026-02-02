@@ -597,24 +597,6 @@
     },
     {
       "name": {
-        "ru": "BWA Online",
-        "uk": "BWA Online",
-        "en": "BWA Online"
-      },
-      "url": "https://bwa.to/rc",
-      "description": {
-        "ru": "BWA Online — онлайн-кинотеатр",
-        "uk": "BWA Online — онлайн-кінотеатр",
-        "en": "BWA Online — online cinema"
-      },
-      "category": {
-        "ru": "Онлайн",
-        "uk": "Онлайн",
-        "en": "Online"
-      }
-    },
-    {
-      "name": {
         "ru": "🇺🇦 BazarNetUA (безкоштовно)",
         "uk": "🇺🇦 BazarNetUA (безкоштовно)",
         "en": "🇺🇦 BazarNetUA (free)"
@@ -741,6 +723,7 @@
     }
   ]
 }
+
 
 
 
