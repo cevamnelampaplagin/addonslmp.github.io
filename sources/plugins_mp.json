@@ -93,6 +93,24 @@
     },
     {
       "name": {
+        "ru": "Movie Enhancer",
+        "uk": "Movie Enhancer",
+        "en": "Movie Enhancer"
+      },
+      "url": "https://lampame.github.io/main/lme.js",
+      "description": {
+        "ru": "Дополнительные мелочи для информации по Фильмам/Сериалам.",
+        "uk": "Додаткові дрібниці для інформації про фільми/серіали.",
+        "en": "Additional details for information on Movies/TV Series."
+      },
+      "category": {
+        "ru": "Разное",
+        "uk": "Різне",
+        "en": "Misc"
+      }
+    },    
+    {
+      "name": {
         "ru": "OnlineServe",
         "uk": "OnlineServe",
         "en": "OnlineServe"
@@ -741,6 +759,7 @@
     }
   ]
 }
+
 
 
 
