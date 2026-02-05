@@ -1,5 +1,5 @@
 {
-  "updateDate": "02.02.2026",
+  "updateDate": "05.02.2026",
   "plugins": [
     {
       "name": {
@@ -669,6 +669,24 @@
     },
     {
       "name": {
+        "ru": "",
+        "uk": "",
+        "en": ""
+      },
+      "url": "http://wtch.ch/m",
+      "description": {
+        "ru": "Онлайн 4к",
+        "uk": "Онлайн 4к",
+        "en": "Онлайн 4к"
+      },
+      "category": {
+        "ru": "Онлайн",
+        "uk": "Онлайн",
+        "en": "Online"
+      }
+    },    
+    {
+      "name": {
         "ru": "IPTV",
         "uk": "IPTV",
         "en": "IPTV"
@@ -759,6 +777,7 @@
     }
   ]
 }
+
 
 
 
