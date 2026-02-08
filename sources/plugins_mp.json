@@ -1,5 +1,5 @@
 {
-  "updateDate": "05.02.2026",
+  "updateDate": "08.02.2026",
   "plugins": [
     {
       "name": {
@@ -669,15 +669,33 @@
     },
     {
       "name": {
-        "ru": "Онлайн 4к",
-        "uk": "Онлайн 4к",
-        "en": "Онлайн 4к"
+        "ru": "Онлайн wtch.ch",
+        "uk": "Онлайн wtch.ch",
+        "en": "Онлайн wtch.ch"
       },
       "url": "http://wtch.ch/m",
       "description": {
         "ru": "Онлайн 4к",
         "uk": "Онлайн 4к",
         "en": "Онлайн 4к"
+      },
+      "category": {
+        "ru": "Онлайн",
+        "uk": "Онлайн",
+        "en": "Online"
+      }
+    },    
+    {
+      "name": {
+        "ru": "Онлайн Stream",
+        "uk": "Онлайн Stream",
+        "en": "Online Stream"
+      },
+      "url": "http://arkmv.ru/vod",
+      "description": {
+        "ru": "Онлайн Stream",
+        "uk": "Онлайн Stream",
+        "en": "Online Stream"
       },
       "category": {
         "ru": "Онлайн",
@@ -777,6 +795,7 @@
     }
   ]
 }
+
 
 
 
