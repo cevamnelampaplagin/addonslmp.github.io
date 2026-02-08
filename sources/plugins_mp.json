@@ -702,25 +702,7 @@
         "uk": "Онлайн",
         "en": "Online"
       }
-    },   
-    {
-      "name": {
-        "ru": "01 Online",
-        "uk": "01 Online",
-        "en": "01 Online"
-      },
-      "url": "http://z01.online/live",
-      "description": {
-        "ru": "01 Online",
-        "uk": "01 Online",
-        "en": "01 Online"
-      },
-      "category": {
-        "ru": "Онлайн",
-        "uk": "Онлайн",
-        "en": "Online"
-      }
-    },    
+    },      
     {
       "name": {
         "ru": "IPTV",
@@ -813,6 +795,7 @@
     }
   ]
 }
+
 
 
 
