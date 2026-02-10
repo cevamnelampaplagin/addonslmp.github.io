@@ -1,5 +1,5 @@
 {
-  "updateDate": "08.02.2026",
+  "updateDate": "10.02.2026",
   "plugins": [
     {
       "name": {
@@ -453,6 +453,24 @@
     },     
     {
       "name": {
+        "ru": "QualityUa+Studios",
+        "uk": "QualityUa+Studios",
+        "en": "QualityUa+Studios"
+      },
+      "url": "https://crowley38.github.io/QualityUa+Studios.js",
+      "description": {
+        "ru": "Информация о качестве фильма и название студий.",
+        "uk": "Інформація про якість фільму та назва студій.",
+        "en": "Information about the quality of the film and the names of the studios."
+      },
+      "category": {
+        "ru": "Интерфейс",
+        "uk": "Інтерфейс",
+        "en": "Interface"
+      }
+    },    
+    {
+      "name": {
         "ru": "Рейтинг фильмов и сериалов",
         "uk": "Рейтинг фільмів і серіалів",
         "en": "Rating of movies and TV series "
@@ -795,6 +813,7 @@
     }
   ]
 }
+
 
 
 
