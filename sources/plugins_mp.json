@@ -1,5 +1,5 @@
 {
-  "updateDate": "10.02.2026",
+  "updateDate": "11.02.2026",
   "plugins": [
     {
       "name": {
@@ -597,15 +597,15 @@
     },
     {
       "name": {
-        "ru": "Torrent Styles",
-        "uk": "Torrent Styles",
-        "en": "Torrent Styles"
+        "ru": "EasyTorrent",
+        "uk": "EasyTorrent",
+        "en": "EasyTorrent"
       },
-      "url": "https://ipavlin98.github.io/lmp-plugins/torr-styles.js",
+      "url": "https://darkestclouds.github.io/plugins/easytorrent/easytorrent.min.js",
       "description": {
-        "ru": "Подсветка высоких сидов зелёным, высокого битрейта красным, зелёная рамка фокуса.",
-        "uk": "Підсвічування високих сидів зеленим, високого бітрейту червоним, зелена рамка фокусу.",
-        "en": "High seeds highlighted in green, high bitrate in red, green focus frame."
+        "ru": "Новое оформление для списка торрентов.",
+        "uk": "Нове оформлення для списку торрентів.",
+        "en": "New design for the torrent list."
       },
       "category": {
         "ru": "Торрент",
@@ -813,6 +813,7 @@
     }
   ]
 }
+
 
 
 
