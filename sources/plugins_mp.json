@@ -1,5 +1,5 @@
 {
-  "updateDate": "11.02.2026",
+  "updateDate": "12.02.2026",
   "plugins": [
     {
       "name": {
@@ -129,33 +129,15 @@
     },
     {
       "name": {
-        "ru": "HFix",
-        "uk": "HFix",
-        "en": "HFix"
+        "ru": "Ultimate Skip",
+        "uk": "Ultimate Skip",
+        "en": "Ultimate Skip"
       },
-      "url": "https://ipavlin98.github.io/lmp-plugins/huyfix.js",
+      "url": "https://ipavlin98.github.io/lmp-series-skip-db/ultimate-skip.js",
       "description": {
-        "ru": "То же, что и OnlineServe, но с автоматическим поиском по всем выбранным в настройках балансерам без ручного выбора при запуске.",
-        "uk": "Те саме, що й OnlineServe, але з автоматичним пошуком за всіма обраними в налаштуваннях балансерами без ручного вибору під час запуску.",
-        "en": "Same as OnlineServe, but with automatic search across all load balancers selected in the settings without manual selection at startup."
-      },
-      "category": {
-        "ru": "Разное",
-        "uk": "Різне",
-        "en": "Misc"
-      }
-    },
-    {
-      "name": {
-        "ru": "Series Skip",
-        "uk": "Series Skip",
-        "en": "Series Skip"
-      },
-      "url": "https://ipavlin98.github.io/lmp-series-skip-db/series-skip.js",
-      "description": {
-        "ru": "Пропуск интро и аутро для сериалов. Работает для большинства популярных тайтлов.",
-        "uk": "Пропуск інтро та аутро для серіалів. Працює для більшості популярних серіалів.",
-        "en": "Skip intro and outro for TV series. Works for most popular titles."
+        "ru": "Пропуск интро и аутро для сериалов и аниме. Работает для большинства популярных тайтлов.",
+        "uk": "Пропуск інтро та аутро для серіалів та аніме. Працює для більшості популярних серіалів.",
+        "en": "Skip intro and outro for TV series and anime. Works for most popular titles."
       },
       "category": {
         "ru": "Разное",
@@ -777,24 +759,6 @@
     },
     {
       "name": {
-        "ru": "Anime Skip",
-        "uk": "Anime Skip",
-        "en": "Anime Skip"
-      },
-      "url": "https://ipavlin98.github.io/lmp-plugins/anime-skip.js",
-      "description": {
-        "ru": "Пропуск опенингов и эндингов в аниме через базу Aniskip.",
-        "uk": "Пропуск опенінгів та ендінгів в аніме через базу Aniskip.",
-        "en": "Skipping openings and endings in anime using the Aniskip database."
-      },
-      "category": {
-        "ru": "Аниме",
-        "uk": "Аніме",
-        "en": "Anime"
-      }
-    },
-    {
-      "name": {
         "ru": "🇺🇦 Hikka Anime",
         "uk": "🇺🇦 Hikka Anime",
         "en": "🇺🇦 Hikka Anime"
@@ -813,6 +777,7 @@
     }
   ]
 }
+
 
 
 
