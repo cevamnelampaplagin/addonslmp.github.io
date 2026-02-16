@@ -1,5 +1,5 @@
 {
-  "updateDate": "13.02.2026",
+  "updateDate": "16.02.2026",
   "plugins": [
     {
       "name": {
@@ -313,7 +313,7 @@
         "uk": "Logo Title",
         "en": "Logo Title"
       },
-      "url": "https://lampaplugins.github.io/store/logo.js",
+      "url": "https://crowley38.github.io/NewLogo.js",
       "description": {
         "ru": "Логотип фильма вместо названия",
         "uk": "Логотип фільму замість назви",
@@ -325,6 +325,24 @@
         "en": "Interface"
       }
     },
+    {
+      "name": {
+        "ru": "Цеветной рейтинг",
+        "uk": "Кольоровий рейтинг",
+        "en": "Color rating"
+      },
+      "url": "https://tvigl.github.io/plugins/vote_colour.js",
+      "description": {
+        "ru": "Цветной рейтинг на карточке фильмов / сериалов.",
+        "uk": "Кольоровий рейтинг на картках фільмів / серіалів.",
+        "en": "Color rating on movie/TV series cards."
+      },
+      "category": {
+        "ru": "Интерфейс",
+        "uk": "Інтерфейс",
+        "en": "Interface"
+      }
+    },    
     {
       "name": {
         "ru": "Apple theme",
@@ -777,6 +795,7 @@
     }
   ]
 }
+
 
 
 
