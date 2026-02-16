@@ -450,7 +450,25 @@
         "uk": "Інтерфейс",
         "en": "Interface"
       }
-    },        
+    },    
+    {
+      "name": {
+        "ru": "Rating_omdb",
+        "uk": "Rating_omdb",
+        "en": "Rating_omdb"
+      },
+      "url": "https://tvigl.github.io/plugins/rating_omdb.js",
+      "description": {
+        "ru": "Плагин для добавления рейтингов: Imdb, Tmdb, MetaCritic, Rotten Tomato.",
+        "uk": "Плагін для додавання рейтингів: Imdb, Tmdb, MetaCritic, Rotten Tomato.",
+        "en": "Plugin for adding ratings: Imdb, Tmdb, MetaCritic, Rotten Tomato."
+      },
+      "category": {
+        "ru": "Интерфейс",
+        "uk": "Інтерфейс",
+        "en": "Interface"
+      }
+    },     
     {
       "name": {
         "ru": "Рейтинг фильмов и сериалов",
@@ -777,6 +795,7 @@
     }
   ]
 }
+
 
 
 
