@@ -1,5 +1,5 @@
 {
-  "updateDate": "16.02.2026",
+  "updateDate": "19.02.2026",
   "plugins": [
     {
       "name": {
@@ -615,6 +615,24 @@
     },
     {
       "name": {
+        "ru": "Torrent Styles by Hlushok",
+        "uk": "Torrent Styles by Hlushok",
+        "en": "Torrent Styles by Hlushok"
+      },
+      "url": "https://hlushok.github.io/lampa-plugin/torrent_styles.js",
+      "description": {
+        "ru": "Цветное оформление для торрентов.",
+        "uk": "Кольорове оформлення для торрентів.",
+        "en": "Color scheme for torrents."
+      },
+      "category": {
+        "ru": "Торрент",
+        "uk": "Торрент",
+        "en": "Torrent"
+      }
+    },    
+    {
+      "name": {
         "ru": "TS Preload",
         "uk": "TS Preload",
         "en": "TS Preload"
@@ -795,6 +813,7 @@
     }
   ]
 }
+
 
 
 
