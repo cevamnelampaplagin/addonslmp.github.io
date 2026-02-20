@@ -687,6 +687,24 @@
     },
     {
       "name": {
+        "ru": "AIpac Online Beta",
+        "uk": "AIpac Online Beta",
+        "en": "AIpac Online Beta"
+      },
+      "url": "https://beta.l-vid.online/online.js",
+      "description": {
+        "ru": "Онлайн-источник",
+        "uk": "Онлайн-джерело",
+        "en": "Online source"
+      },
+      "category": {
+        "ru": "Онлайн",
+        "uk": "Онлайн",
+        "en": "Online"
+      }
+    },    
+    {
+      "name": {
         "ru": "🇺🇦 BazarNetUA (безкоштовно)",
         "uk": "🇺🇦 BazarNetUA (безкоштовно)",
         "en": "🇺🇦 BazarNetUA (free)"
@@ -849,6 +867,7 @@
     }
   ]
 }
+
 
 
 
