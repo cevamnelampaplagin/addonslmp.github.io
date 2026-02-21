@@ -309,6 +309,24 @@
     },
     {
       "name": {
+        "ru": "Netflix Premium Style",
+        "uk": "Netflix Premium Style",
+        "en": "Netflix Premium Style"
+      },
+      "url": "https://ourbeerdelivery.github.io/pluginlmp/netflix_premium_style.js",
+      "description": {
+        "ru": "Интерфейс в стиле Netflix.",
+        "uk": "Інтерфейс у стилі Netflix.",
+        "en": "Netflix-style interface."
+      },
+      "category": {
+        "ru": "Интерфейс",
+        "uk": "Інтерфейс",
+        "en": "Interface"
+      }
+    },    
+    {
+      "name": {
         "ru": "Logo Title",
         "uk": "Logo Title",
         "en": "Logo Title"
@@ -903,6 +921,7 @@
     }
   ]
 }
+
 
 
 
