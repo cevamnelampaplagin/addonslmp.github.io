@@ -45,16 +45,34 @@
       },
       "url": "https://addonslmp.github.io/plugins/pluginsinstaller.js",
       "description": {
-        "ru": "Простая установка плагинов из пользовательского источника",
-        "uk": "Просте встановлення плагінів з користувацького джерела",
-        "en": "Simple plugin installation from a custom source"
+        "ru": "Простая установка плагинов из пользовательского источника.",
+        "uk": "Просте встановлення плагінів з користувацького джерела.",
+        "en": "Simple plugin installation from a custom source."
       },
       "category": {
         "ru": "Разное",
         "uk": "Різне",
         "en": "Misc"
       }
-    },   
+    }, 
+    {
+      "name": {
+        "ru": "NightingaleNotifications LME",
+        "uk": "NightingaleNotifications LME",
+        "en": "NightingaleNotifications LME"
+      },
+      "url": "https://lampame.github.io/main/nn.js",
+      "description": {
+        "ru": "Это немного переосмысленная подписка на выход серий, работает с помощью Махно и только в сериалах. То есть уведомления будут приходить, только если у сериала появилась новая серия в базе Махно (Ашди).",
+        "uk": "Це трохи переосмислена підписка на вихід серій, працює за допомогою Махно і тільки у серіалах. Тобто сповіщення будуть надходити, тільки якщо у серіалу зʼявилась нова серія в базі Махно(Ашді).",
+        "en": "This is a slightly reworked subscription to series releases, powered by Makhno and only for TV series. This means that notifications will only be sent if a new episode of a series has been added to the Makhno (Ashdi) database."
+      },
+      "category": {
+        "ru": "Разное",
+        "uk": "Різне",
+        "en": "Misc"
+      }
+    },    
     {
       "name": {
         "ru": "Комментарии от Резки",
@@ -936,9 +954,85 @@
         "uk": "Аніме",
         "en": "Anime"
       }
-    }
+    },
+    {
+      "name": {
+        "uk": "Plugin Yarik's Mod",
+        "en": "Plugin Yarik's Mod"
+      },
+      "url": "http://lampalampa.free.nf/ymod.js",
+      "description": {
+        "uk": "Великий набір для оформлення картки : Лого замість назв (Якщо немає Укр ставить ENG), Лого студій - активні кнопки на сторінку студії, Рейтинги IMDB, RT, Mc, тощо. (Потрібні api-ключі з сайтів OMDB , MDBList ) Оригінальна назва (Додає тією мовою, якої не вистачає). Відображення наявності та статусу українських торентів з вашого парсеру (Повинен бути увімкнений та налаштований парсер).",
+        "en": "Large set for card design: Logos instead of names (if there is no Ukrainian, use English), studio logos - active buttons on the studio page, IMDB, RT, Mc ratings, etc. (API keys from OMDB and MDBList websites are required). Original name (adds the missing language). Display the availability and status of Ukrainian torrents from your parser (parser must be enabled and configured)."
+      },
+      "category": {
+        "uk": "Плагіни від Yarik's",
+        "en": "Plugins by Yarik's"
+      }
+    },  
+    {
+      "name": {
+        "uk": "Plugin Cardify Mod",
+        "en": "Plugin Cardify Mod"
+      },
+      "url": "http://lampalampa.free.nf/ycardmod.js",
+      "description": {
+        "uk": "Модифікація плагіну Cardify з новим відображенням опису фільму. Підходить для роботи з іншими плагінами звідси. Додане слайд-шоу обкладинок фільму.",
+        "en": "Modification of the Cardify plugin with a new movie description display. Suitable for working with other plugins from here. Added movie cover slideshow."
+      },
+      "category": {
+        "uk": "Плагіни від Yarik's",
+        "en": "Plugins by Yarik's"
+      }
+    },      
+    {
+      "name": {
+        "uk": "Plugin Ua Comments",
+        "en": "Plugin Ua Comments"
+      },
+      "url": "http://lampalampa.free.nf/uacoments.js",
+      "description": {
+        "uk": "Додає коментарі з Українських ресурсів одразу під карткою фільму.",
+        "en": "Adds comments from Ukrainian resources directly below the movie card."
+      },
+      "category": {
+        "uk": "Плагіни від Yarik's",
+        "en": "Plugins by Yarik's"
+      }
+    },      
+    {
+      "name": {
+        "uk": "Plugin WikiFind",
+        "en": "Plugin WikiFind"
+      },
+      "url": "http://lampalampa.free.nf/wikifind.js",
+      "description": {
+        "uk": "Додає кнопку пошуку статті на Wikipedia. Самі статті переформатовуються під формат екрану, щоб зручно було дивитись інформацію. Також додає додаткові статті дотичні до фільму.",
+        "en": "Adds a button to search for articles on Wikipedia. The articles themselves are reformatted to fit the screen for easy viewing. Also adds additional articles related to the film."
+      },
+      "category": {
+        "uk": "Плагіни від Yarik's",
+        "en": "Plugins by Yarik's"
+      }
+    },      
+    {
+      "name": {
+        "uk": "Mod for Interface+",
+        "en": "Mod for Interface+"
+      },
+      "url": "http://lampalampa.free.nf/interfaceymod.js",
+      "description": {
+        "uk": "Модифікація плагіну Інтерфейс+, в якій є можливість керувати відступами до та після, щоб вписати у ваш інтерфейс. Також є багато інших приємних налаштувань.",
+        "en": "A modification of the Interface+ plugin that allows you to control the indents before and after to fit your interface. There are also many other nice settings."
+      },
+      "category": {
+        "uk": "Плагіни від Yarik's",
+        "en": "Plugins by Yarik's"
+      }
+    },      
   ]
 }
+
 
 
 
