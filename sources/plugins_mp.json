@@ -1,5 +1,5 @@
 {
-  "updateDate": "21.02.2026",
+  "updateDate": "23.02.2026",
   "plugins": [
     {
       "name": {
@@ -489,9 +489,9 @@
     },     
     {
       "name": {
-        "ru": "Rating_omdb",
-        "uk": "Rating_omdb",
-        "en": "Rating_omdb"
+        "ru": "Rating_omdb Tvigl",
+        "uk": "Rating_omdb Tvigl",
+        "en": "Rating_omdb Tvigl"
       },
       "url": "https://tvigl.github.io/plugins/rating_omdb.js",
       "description": {
@@ -507,9 +507,9 @@
     },     
     {
       "name": {
-        "ru": "Рейтинг фильмов и сериалов",
-        "uk": "Рейтинг фільмів і серіалів",
-        "en": "Rating of movies and TV series "
+        "ru": "Рейтинг фильмов и сериалов ko31k",
+        "uk": "Рейтинг фільмів і серіалів ko31k",
+        "en": "Rating of movies and TV series ko31k"
       },
       "url": "https://ko31k.github.io/LMP/plugins/rtg.js",
       "description": {
@@ -523,6 +523,24 @@
         "en": "Interface"
       }
     },   
+    {
+      "name": {
+        "ru": "Рейтинг фильмов и сериалов от yarikrazor",
+        "uk": "Рейтинг фильмов и сериалов від yarikrazor",
+        "en": "Rating movies and tvshows by yarikrazor"
+      },
+      "url": "https://yarikrazor-star.github.io/lmp/Ratings_Lampa.js",
+      "description": {
+        "ru": "Рейтинг фильмов и сериалов от yarikrazor",
+        "uk": "Рейтинг фильмов и сериалов від yarikrazor",
+        "en": "Rating movies and tvshows by yarikrazor"
+      },
+      "category": {
+        "ru": "Интерфейс",
+        "uk": "Інтерфейс",
+        "en": "Interface"
+      }
+    },       
     {
       "name": {
         "ru": "TMDB Networks & Providers",
@@ -921,6 +939,7 @@
     }
   ]
 }
+
 
 
 
