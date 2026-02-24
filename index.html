@@ -12,7 +12,11 @@
         height: 100%;
         background: radial-gradient(circle at top, #1e1e1e, #0b0b0b);
         font-family: Arial, Helvetica, sans-serif;
-        color: #ffffff;
+        color: #bfbfbf;
+        transition: overflow 0.3s ease;
+    }
+    .no-scroll {
+        overflow: hidden;
     }
     .container {
         min-height: 100vh;
@@ -62,11 +66,11 @@
         font-size: 52px;
         margin-bottom: 30px;
         letter-spacing: 0.5px;
+        color: #ffffff;
     }
     p {
         font-size: 26px;
         line-height: 1.5;
-        color: #d0d0d0;
         margin: 14px 0;
     }
     .path {
@@ -75,23 +79,29 @@
         color: #ffffff;
         font-weight: bold;
     }
-    .copy-btn {
+    .plugin-link-wrapper {
         margin-top: 45px;
-        padding: 22px 60px;
-        font-size: 30px;
+        display: inline-block;
+    }
+    .plugin-link {
+        padding: 22px 40px;
+        font-size: 24px;
         font-weight: bold;
         color: #ffffff;
         background: linear-gradient(135deg, #3a7bfd, #2455d6);
-        border: none;
         border-radius: 14px;
         cursor: pointer;
         transition: transform 0.15s ease, box-shadow 0.15s ease;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+        word-break: break-all;
+        max-width: 90vw;
+        display: block;
     }
-    .copy-btn:hover {
-        transform: scale(1.04);
+    .plugin-link:hover {
+        transform: scale(1.02);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
     }
-    .copy-btn:active {
+    .plugin-link:active {
         transform: scale(0.98);
     }
     .copied {
@@ -103,6 +113,97 @@
     }
     .copied.show {
         opacity: 1;
+    }
+    .help-btn {
+        margin-top: 20px;
+        padding: 18px 50px;
+        font-size: 24px;
+        font-weight: bold;
+        color: #ffffff;
+        background: linear-gradient(135deg, #6c757d, #495057);
+        border: none;
+        border-radius: 14px;
+        cursor: pointer;
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    }
+    .help-btn:hover {
+        transform: scale(1.04);
+    }
+    .help-btn:active {
+        transform: scale(0.98);
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.85);
+        backdrop-filter: blur(8px);
+        z-index: 1000;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    .modal.show {
+        opacity: 1;
+    }
+    .modal-inner {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        min-height: 100%;
+        padding-top: 3vh;
+    }
+    .modal-content {
+        padding: 24px;
+        border: 1px solid rgba(255,255,255,0.15);
+        width: 85%;
+        max-width: 580px;
+        background: rgba(30,30,30,0.92);
+        border-radius: 16px;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.7);
+        max-height: 78vh;
+        overflow-y: auto;
+        margin: 3% auto 5% auto;
+    }
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 32px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .close:hover {
+        color: white;
+    }
+    .modal h2 {
+        text-align: center;
+        margin: 0 0 20px;
+        font-size: 30px;
+        color: #ffffff;
+    }
+    .modal ol {
+        font-size: 19px;
+        line-height: 1.45;
+        padding-left: 28px;
+        margin: 0 0 16px;
+    }
+    .modal li {
+        margin-bottom: 10px;
+    }
+    .modal strong {
+        color: #ffffff;
+    }
+    .modal p {
+        font-size: 19px;
+        line-height: 1.45;
+        margin: 12px 0;
+    }
+    .modal h3 {
+        font-size: 24px;
+        margin: 24px 0 12px;
+        text-align: center;
+        color: #ffffff;
     }
 
     .github-footer {
@@ -116,26 +217,25 @@
         gap: 12px;
         padding: 14px 28px;
         font-size: 22px;
-        color: rgba(255, 255, 255, 0.5);
-        background: rgba(255, 255, 255, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.12);
+        color: rgba(255,255,255,0.5);
+        background: rgba(255,255,255,0.05);
+        border: 1px solid rgba(255,255,255,0.12);
         border-radius: 12px;
         text-decoration: none;
         transition: all 0.25s ease;
         backdrop-filter: blur(8px);
     }
     .github-btn:hover {
-        color: rgba(255, 255, 255, 0.9);
-        background: rgba(255, 255, 255, 0.1);
-        border-color: rgba(255, 255, 255, 0.25);
+        color: rgba(255,255,255,0.9);
+        background: rgba(255,255,255,0.1);
+        border-color: rgba(255,255,255,0.25);
         transform: translateY(-2px);
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.4);
     }
     .github-icon {
         width: 28px;
         height: 28px;
         opacity: 0.6;
-        transition: opacity 0.25s ease;
     }
     .github-btn:hover .github-icon {
         opacity: 0.9;
@@ -143,6 +243,7 @@
 </style>
 </head>
 <body>
+
 <div class="lang-switcher">
     <button class="lang-btn active" data-lang="ua">UA</button>
     <button class="lang-btn" data-lang="ru">RU</button>
@@ -152,13 +253,19 @@
 <div class="container">
     <div class="card">
         <h1 data-key="title">Multiplugin для Lampa</h1>
-        <p data-key="instruction">Натисніть кнопку нижче, щоб скопіювати посилання на плагін.</p>
-        <p data-key="path_instruction">Після цього вставте її в:</p>
+        <p data-key="instruction">Натисніть на посилання нижче, щоб скопіювати його.</p>
+        <p data-key="path_instruction">Потім вставте його в:</p>
         <div class="path" data-key="path">Lampa → Розширення → Додати плагін</div>
-        <button class="copy-btn" onclick="copyLink()" data-key="copy_button">
-            Натисни тут, щоб скопіювати
-        </button>
+
+        <div class="plugin-link-wrapper">
+            <div class="plugin-link" onclick="copyLink()" data-key="copy_button">
+                https://addonslmp.github.io/multiplugin.js
+            </div>
+        </div>
+
         <div id="copied" class="copied" data-key="copied">✔ Скопійовано</div>
+
+        <button class="help-btn" onclick="openHelp()" data-key="help_button">Як користуватися мультиплагином?</button>
     </div>
 
     <div class="github-footer">
@@ -171,37 +278,112 @@
     </div>
 </div>
 
+<div id="helpModal" class="modal">
+    <div class="modal-inner">
+        <div class="modal-content">
+            <span class="close" onclick="closeHelp()">×</span>
+            <h2 data-key="help_title">Як користуватися мультиплагином?</h2>
+            <ol>
+                <li><strong data-key="step1"></strong><br><span data-key="step1_sub"></span></li>
+                <li><strong data-key="step2"></strong><br><span data-key="step2_cont"></span></li>
+                <li><strong data-key="step3"></strong></li>
+                <li><strong data-key="step4"></strong><br><span data-key="step4_cont"></span></li>
+            </ol>
+            <p><strong data-key="alt_title"></strong><br><span data-key="alt_cont"></span></p>
+            <h3 data-key="export_title">Альтернативний спосіб - Експорт</h3>
+            <p data-key="export_desc"></p>
+            <ol start="1">
+                <li data-key="export_step1"></li>
+                <li data-key="export_step2"></li>
+                <li data-key="export_step3"></li>
+            </ol>
+            <p data-key="export_note"></p>
+        </div>
+    </div>
+</div>
+
 <script>
     const pluginLink = 'https://addonslmp.github.io/multiplugin.js';
 
     const translations = {
         ua: {
             title: "Multiplugin для Lampa",
-            instruction: "Натисніть кнопку нижче, щоб скопіювати посилання на плагін.",
-            path_instruction: "Після цього вставте її в:",
+            instruction: "Натисніть на посилання нижче, щоб скопіювати його.",
+            path_instruction: "Потім вставте його в:",
             path: "Lampa → Розширення → Додати плагін",
-            copy_button: "Натисни тут, щоб скопіювати",
-            copied: "✔ Скопійовано"
+            copy_button: "https://addonslmp.github.io/multiplugin.js",
+            copied: "✔ Скопійовано",
+            help_title: "Як користуватися мультиплагином?",
+            step1: "Установіть плагін в Lampa.",
+            step1_sub: "В налаштуваннях з'явиться кнопка «Мультиплагін».",
+            step2: "Відкрийте мультиплагін і натисніть «Синхронізація плагинов»",
+            step2_cont: "Щоб завантажити актуальний список плагінів.",
+            step3: "Перезавантажте Lampa.",
+            step4: "Поставте галочки навпроти потрібних плагінів",
+            step4_cont: "Вони будуть завантажуватися автоматично.",
+            alt_title: "Якщо потрібен тільки онлайн-перегляд",
+            alt_cont: "Натисніть «Завантажити тільки онлайн», і система автоматично увімкне відповідні плагіни.",
+            export_title: "Альтернативний спосіб - Експорт",
+            export_desc: "Ви можете експортувати вибрані плагіни безпосередньо в розширення:",
+            export_step1: "Відкрийте розділ Експорт",
+            export_step2: "Відмітьте потрібні плагіни",
+            export_step3: "Вийдіть з меню",
+            export_note: "Плагіни встановляться як звичайні розширення і працюватимуть незалежно від мультиплагіна.",
+            help_button: "Як користуватися мультиплагином?"
         },
         ru: {
             title: "Мультиплагин для Lampa",
-            instruction: "Нажмите кнопку ниже, чтобы скопировать ссылку на плагин.",
-            path_instruction: "После этого вставьте её в:",
+            instruction: "Нажмите на ссылку ниже, чтобы скопировать её.",
+            path_instruction: "Затем вставьте её в:",
             path: "Lampa → Расширения → Добавить плагин",
-            copy_button: "Нажми здесь, чтобы скопировать",
-            copied: "✔ Скопировано"
+            copy_button: "https://addonslmp.github.io/multiplugin.js",
+            copied: "✔ Скопировано",
+            help_title: "Как пользоваться мультиплагином?",
+            step1: "Установите плагин в Lampa.",
+            step1_sub: "В настройках появится кнопка «Мультиплагин».",
+            step2: "Откройте мультиплагин и нажмите «Синхронизация плагинов»",
+            step2_cont: "Чтобы загрузить актуальный список плагинов.",
+            step3: "Перезапустите Lampa.",
+            step4: "Отметьте галочками нужные плагины",
+            step4_cont: "Они будут загружаться автоматически.",
+            alt_title: "Если вам нужен только онлайн-просмотр",
+            alt_cont: "Нажмите «Загрузить только онлайн», и система автоматически включит подходящие плагины.",
+            export_title: "Альтернативный способ - Экспорт",
+            export_desc: "Вы можете экспортировать выбранные плагины напрямую в расширения:",
+            export_step1: "Откройте раздел Экспорт",
+            export_step2: "Отметьте нужные плагины",
+            export_step3: "Выйдите из меню",
+            export_note: "Плагины установятся как обычные расширения и будут работать независимо от мультиплагина.",
+            help_button: "Как пользоваться мультиплагином?"
         },
         en: {
             title: "Multiplugin for Lampa",
-            instruction: "Click the button below to copy the plugin link.",
+            instruction: "Click the link below to copy it.",
             path_instruction: "Then paste it into:",
             path: "Lampa → Extensions → Add plugin",
-            copy_button: "Click here to copy",
-            copied: "✔ Copied"
+            copy_button: "https://addonslmp.github.io/multiplugin.js",
+            copied: "✔ Copied",
+            help_title: "How to use Multiplugin?",
+            step1: "Install the plugin in Lampa.",
+            step1_sub: "A «Multiplugin» button will appear in the settings.",
+            step2: "Open Multiplugin and click «Sync plugins»",
+            step2_cont: "To load the current list of plugins.",
+            step3: "Restart Lampa.",
+            step4: "Check the boxes for the plugins you need",
+            step4_cont: "They will load automatically.",
+            alt_title: "If you only need online viewing",
+            alt_cont: "Click «Load only online», and the system will automatically enable suitable plugins.",
+            export_title: "Alternative way - Export",
+            export_desc: "You can export selected plugins directly to extensions:",
+            export_step1: "Open the Export section",
+            export_step2: "Check the desired plugins",
+            export_step3: "Exit the menu",
+            export_note: "Plugins will be installed as regular extensions and will work independently of Multiplugin.",
+            help_button: "How to use Multiplugin?"
         }
     };
 
-    let currentLang = 'ua'; 
+    let currentLang = 'ua';
 
     function setLanguage(lang) {
         currentLang = lang;
@@ -211,6 +393,10 @@
                 el.textContent = translations[lang][key];
             }
         });
+
+        document.querySelector('[data-key="step2_cont"]').textContent = translations[lang].step2_cont || '';
+        document.querySelector('[data-key="step4_cont"]').textContent = translations[lang].step4_cont || '';
+        document.querySelector('[data-key="alt_cont"]').textContent = translations[lang].alt_cont || '';
 
         document.querySelectorAll('.lang-btn').forEach(btn => {
             btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
@@ -228,11 +414,32 @@
             const copied = document.getElementById('copied');
             copied.textContent = translations[currentLang].copied;
             copied.classList.add('show');
-            setTimeout(() => {
-                copied.classList.remove('show');
-            }, 2000);
+            setTimeout(() => copied.classList.remove('show'), 2000);
         });
     }
+
+    function openHelp() {
+        document.body.classList.add('no-scroll');
+        const modal = document.getElementById('helpModal');
+        modal.style.display = 'block';
+        setTimeout(() => modal.classList.add('show'), 10);
+    }
+
+    function closeHelp() {
+        const modal = document.getElementById('helpModal');
+        modal.classList.remove('show');
+        document.body.classList.remove('no-scroll');
+        setTimeout(() => modal.style.display = 'none', 300);
+    }
+
+    document.addEventListener('click', function(event) {
+        const modal = document.getElementById('helpModal');
+        if (modal.style.display === 'block') {
+            if (!event.target.closest('.modal-content') && !event.target.closest('.help-btn')) {
+                closeHelp();
+            }
+        }
+    });
 
     setLanguage('ua');
 </script>
